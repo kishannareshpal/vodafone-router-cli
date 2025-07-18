@@ -1,0 +1,38 @@
+{
+  "name": "vodafone-router-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow@latest bun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishannareshpal/vodafone-router-cli.git"
+  },
+  "keywords": [
+    "vodafone",
+    "router",
+    "cli",
+    "internet",
+    "ip",
+    "address"
+  ],
+  "author": "Kishan Jadav <kishan_jadav@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kishannareshpal/vodafone-router-cli/issues"
+  },
+  "homepage": "https://github.com/kishannareshpal/vodafone-router-cli#readme",
+  "description": "",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "puppeteer": "^24.14.0"
+  }
+}
