@@ -10,16 +10,31 @@ export type Logger = WinstonLogger;
  */
 export const makeLogger = (label: string): Logger => {
   return winston.createLogger({
-    level: 'debug',
     transports: [
       new winston.transports.Console({
         format: winston.format.combine(
           winston.format.cli(),
           winston.format.colorize(),
           winston.format.label({ label: label }),
-          winston.format.timestamp(),
-          winston.format.printf(({ level, message, label, timestamp }) => {
+          winston.format.printf(({ level, message, label }) => {
             return `[${label}] ${level}: ${message}`;
+          })
+        )
+      })
+    ]
+  })
+}
+
+
+export const makeCommandLogger = (): Logger => {
+  return winston.createLogger({
+    level: 'debug',
+    transports: [
+      new winston.transports.Console({
+        format: winston.format.combine(
+          winston.format.colorize(),
+          winston.format.printf(({ message }) => {
+            return `${message}`;
           })
         )
       })

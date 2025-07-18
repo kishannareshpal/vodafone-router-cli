@@ -34,7 +34,13 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "date-fns": "^4.1.0",
+    "env-paths": "^3.0.0",
+    "inquirer": "^12.7.0",
     "puppeteer": "^24.14.0",
+    "table": "^6.9.0",
     "winston": "^3.17.0"
   }
 }

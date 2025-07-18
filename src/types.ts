@@ -1,7 +1,6 @@
 export type WifiConnectedDevice = {
     Class: string,
     ConnectedTime: string, // in seconds?
-    InterfaceType: 'wireless'| string,
     IPv4: string,
     DhcpLeaseIP: string,
     IPv6: string,
