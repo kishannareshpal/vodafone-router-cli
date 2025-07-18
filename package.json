@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow@latest bun"
+    "preinstall": "npx only-allow@latest bun",
+    "start": "bun src/index"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "puppeteer": "^24.14.0"
+    "puppeteer": "^24.14.0",
+    "winston": "^3.17.0"
   }
 }
